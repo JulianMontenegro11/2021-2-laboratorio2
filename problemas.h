@@ -6,4 +6,5 @@ using namespace std;
 
 void problema1(int valor);
 bool problema3(char *c1, char *c2);
+
 #endif // PROBLEMAS_H

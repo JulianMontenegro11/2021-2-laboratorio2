@@ -85,6 +85,7 @@ bool problema3(char *c1, char *c2)
         for(int i=0;c1[i]!='\0';i++){
             if(c1[i]!=c2[i]) salida=false;
         }
+
     }
     return salida;
 

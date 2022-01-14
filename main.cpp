@@ -51,6 +51,7 @@ while (continuar==true){  // ciclo para continuar cargando problemas
         }
 
     break;
+
     } // Final caso 3
 
     }
