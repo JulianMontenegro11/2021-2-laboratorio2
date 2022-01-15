@@ -91,3 +91,26 @@ bool problema3(char *c1, char *c2)
 
 
 } // final funcion problema3
+
+
+void problema5(int entero, char *cadena)
+{
+    int contador=0, a=entero;
+    while(a>0){
+        a=a/10;
+        contador++;
+    }
+    cadena[contador]='\0';
+    a=entero;
+    int posicion=contador-1,digito;
+
+    while(posicion>=0){
+        digito=a%10;
+        a=a/10;
+        cadena[posicion]=digito + '0';
+        posicion--;
+
+    }
+    cout<<"La cadena de caracteres es: "<<cadena<<endl;
+
+}
