@@ -114,3 +114,34 @@ void problema5(int entero, char *cadena)
     cout<<"La cadena de caracteres es: "<<cadena<<endl;
 
 }
+
+void problema8(char *c1){
+    int posicion1=0, posicion2=0, cantidad1=0, cantidad2=0;
+
+    for (int i=0;c1[i]!='\0';i++){ // validar cantidad de letras
+        if(isalpha(c1[i])){
+            cantidad1++;
+        }
+    }
+    for( int i=0;c1[i]!='\0';i++){ // validar cantidad de numeros
+        if(!isalpha(c1[i])){
+            cantidad2++;
+        }
+    }
+
+    char texto [cantidad1+1];
+    char num [cantidad2+1];
+
+    for(int i=0;c1[i]!='\0';i++){
+        if(isalpha(c1[i])){
+            texto[posicion1] = c1[i];
+            posicion1++;
+        }else{
+            num[posicion2]=c1[i];
+            posicion2++;
+        }
+    }
+
+    cout<<"Cadena: "<<c1<<"   "<<"Texto: "<<texto<<"   "<<"numeros: "<<num<<endl;
+
+}

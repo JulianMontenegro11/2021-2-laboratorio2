@@ -68,6 +68,19 @@ while (continuar==true){  // ciclo para continuar cargando problemas
         break;
     }   //fina caso 5
 
+
+    case 8 :{
+        char cadena[]={"hbhjn4637hfyd765"};
+        cout<<"Escriba un programa que reciba una cadena de caracteres y separe los numeros del resto de caracteres,"<<endl;
+        cout<<"generando una cadena que no tiene numeros y otra con los números que habia en la cadena original."<<endl;
+        cout<<endl;
+
+        problema8(cadena);
+
+
+
+    } //final problema 8
+
     } // Final switch
 
 

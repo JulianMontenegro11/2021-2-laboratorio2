@@ -21,3 +21,25 @@ int longitud_int(int valor)
 
     return contador+1;
 }
+
+int cantidad_numeros(char *cadena)
+{
+   int cantidad=0;
+   for(int i=0;cadena[i]!='\0';i++){
+       if(!isalpha(cadena[i])){
+           cantidad++;
+       }
+   }
+   return cantidad+1;
+}
+
+int cantidad_letras(char *cadena)
+{
+    int cantidad=0;
+    for(int i=0;cadena[i]!='\0';i++){
+        if(isalpha(cadena[i])){
+            cantidad++;
+        }
+    }
+    return cantidad;
+}
