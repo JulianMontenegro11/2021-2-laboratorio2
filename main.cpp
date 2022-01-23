@@ -13,7 +13,7 @@ int menu;
 
 while (continuar==true){  // ciclo para continuar cargando problemas
 
-    cout<< "Ingrese el problema que desea validar :";
+    cout<<"Ingrese el problema que desea validar? (1,3,5,8,10,12,13,14,16,18) :";
     cin>>menu;
     cout<<endl;
 
@@ -78,8 +78,21 @@ while (continuar==true){  // ciclo para continuar cargando problemas
         problema8(cadena);
 
 
-
+        break;
     } //final problema 8
+
+    case 10:{
+
+        char NumRomano[]={"CMLIII"};
+        cout<<"Escribir un programa que permita convertir un numero en el sistema romano al sistema arabigo"<<endl;
+        cout<<"usado actualmente."<<endl;
+        cout<<endl;
+
+        problema10(NumRomano);
+
+
+        break;
+    } // FInal problema 10
 
     } // Final switch
 

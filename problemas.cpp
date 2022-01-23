@@ -145,3 +145,35 @@ void problema8(char *c1){
     cout<<"Cadena: "<<c1<<"   "<<"Texto: "<<texto<<"   "<<"numeros: "<<num<<endl;
 
 }
+
+void problema10(char *c1)
+{
+    int numArabigo=0,siguiente,anterior,cantidad=-1,aux;
+    for(int i=0;c1[i]!='\0';i++){
+        cantidad++;
+    }
+    aux=cantidad;
+    for(;cantidad!=-1;cantidad--){
+
+        if(c1[cantidad]=='M') siguiente=1000 ;
+        if(c1[cantidad]=='D') siguiente=500;
+        if(c1[cantidad]=='C') siguiente=100;
+        if(c1[cantidad]=='L') siguiente=50;
+        if(c1[cantidad]=='X') siguiente=10;
+        if(c1[cantidad]=='V') siguiente=5;
+        if(c1[cantidad]=='I') siguiente=1;
+
+
+        if(cantidad==aux) {
+            numArabigo=siguiente;
+            anterior=siguiente;
+        }
+        else{
+            if(siguiente>=anterior) numArabigo=numArabigo+siguiente;
+            else numArabigo=numArabigo-siguiente;
+            anterior=siguiente;
+        }
+    }
+    cout<<"El numero romano "<<c1<<" en arabigo es: "<<numArabigo<<endl;
+    cout<<endl;
+}
