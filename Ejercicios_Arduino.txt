@@ -1,0 +1,8 @@
+Circuitos con arduino.
+
+Contro de led con potenciometro
+httpswww.tinkercad.comthingsirOL5bubAVo
+
+
+Mensaje en modulo LCD
+https://www.tinkercad.com/things/kkpsCOcQqNN
