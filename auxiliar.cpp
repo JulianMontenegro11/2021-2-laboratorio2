@@ -65,27 +65,29 @@ void RotarMatriz(int **matriz)
             copia_3[i][j]=matriz[i][j];
         }
    }
+
+
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            copia[j][4-i]=matriz[i][j];
+        }
+    }
+
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            copia_2[j][4-i]=copia[i][j];
+        }
+    }
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            copia_3[j][4-i]=copia_2[i][j];
+        }
+    }
+
     cout<<" ¿Cuantos grados desea rotar la matriz?, oprima 1 para 90 grados, 2 para 180 grados, 3 para 270 grados : ";
     cin>>rotar;
     cout<<endl<<endl<<endl<<endl;
 
-
-    for(int i=0;i<5;i++){
-        for(int j=0;j<5;j++){
-            matriz[j][4-i]=copia[i][j];
-        }
-    }
-
-    for(int i=0;i<5;i++){
-        for(int j=0;j<5;j++){
-            copia[j][4-i]=copia_2[i][j];
-        }
-    }
-    for(int i=0;i<5;i++){
-        for(int j=0;j<5;j++){
-            copia_2[j][4-i]=copia_3[i][j];
-        }
-    }
 
   if(rotar==1){
       for (int i=0; i<5; i++ ) {

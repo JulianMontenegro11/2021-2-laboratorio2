@@ -12,6 +12,7 @@ void problema5(int entero, char *cadena);
 void problema8(char *c1);
 void problema10(char *c1);
 bool problema12(int *matriz, int elementos);
+int problema13 (int *matriz);
 void problema14();
 
 #endif // PROBLEMAS_H

@@ -100,8 +100,25 @@ while (continuar==true){  // ciclo para continuar cargando problemas
         break;
     } // Final problema 12
 
+    case 13:{
+
+        cout<<"Se tiene una fotografia digitalizada de una porcion de la galaxia NGC 1300 que esta ubicada a"<<endl;
+        cout<<"61.000.000 de anios luz del planeta Tierra. La representacion digital de la imagen esta constituida por una matriz"<<endl;
+        cout<<"de numeros enteros; en la cual, cada uno representa la cantidad de luz en ese punto de la imagen"<<endl<<endl;
+        cout<<"Elabore y pruebe una funcion que reciba un puntero a la matriz de enteros como argumento y que retorne el numero"<<endl;
+        cout<<"de estrellas encontradas en la imagen. Ignore las posibles estrellas que puedan existir en los bordes de la matriz."<<endl<<endl;
+
+        int estrellas,matriz[6][8]={{0,3,4,0,0,0,6,8},{5,13,6,0,0,0,2,3},{2,6,2,7,3,0,10,0},{0,0,4,15,4,1,6,0},{0,0,7,12,6,9,10,4},{5,0,6,10,6,4,8,0}};
+           estrellas=problema13(&matriz[0][0]); // Se entrega la d<ireccion de memoria de la primera pocision de la matriz
+           cout<<"La cantidad de estremmas en la imagen es: "<<estrellas<<endl;
+
+        break;
+    } // Final problema 13
 
     case 14:{
+        cout<<"Elabore un programa que llene una matriz 5x5 con los numeros del 1 al 25 y la imprima, luego"<<endl;
+        cout<<"imprima la matriz rotada 90, 180 y 270 grados."<<endl<<endl;
+
     problema14();
         break;
     } // FInal probelma 14

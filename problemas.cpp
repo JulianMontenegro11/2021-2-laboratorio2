@@ -205,3 +205,25 @@ void problema14()
 
 
 }// Final problema 14
+
+int problema13(int *matriz)
+{
+    int imagen[6][8], estrellas=0;
+    float resultado;
+    for(int f=0, i=0;f<6;f++){ // se entrrga valor de la matriz
+        for(int c=0;c<8;c++, i++){
+            imagen[f][c]=*(matriz+i); // se va aumentando la posicion de memoria y se desreferencia para entregar el valor
+        }
+    }
+
+   for(int i =1;i<5;i++){ // Ciclo para recorrer la matriz ignorando los bordes y se realiza la correspondiente operacion
+       for(int j=1;j<7;j++){
+           resultado=(imagen[i][j]+imagen[i][j-1]+imagen[i][j+1]+imagen[i-1][j]+imagen[i+1][j])/5.0;
+           if(resultado<6){
+               estrellas++;
+           }
+       }
+   }
+
+   return estrellas;
+}
