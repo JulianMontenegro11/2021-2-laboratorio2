@@ -177,3 +177,31 @@ void problema10(char *c1)
     cout<<"El numero romano "<<c1<<" en arabigo es: "<<numArabigo<<endl;
     cout<<endl;
 }
+
+
+bool problema12(int *matriz, int elementos)
+{
+
+} // Final problema 12
+
+void problema14()
+{
+    int num = 5;
+    int **matriz = new int *[num]; // reserva la memoria dinamica
+    for(int i=0;i<num;i++){
+        matriz[i]= new int[num];
+    }
+    for(int i=0;i<num;i++){
+        for(int j=0;j<num;j++){
+            matriz[i][j]=1+j+num*i; // Ira llenando la matriz con los numeros del 1 al 25
+
+        }
+    }
+
+    for(int i=0;i<4;i++){
+        ImprimirMatriz(matriz);
+        RotarMatriz(matriz);
+    }
+
+
+}// Final problema 14

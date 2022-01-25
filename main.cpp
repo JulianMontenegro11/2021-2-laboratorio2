@@ -94,6 +94,20 @@ while (continuar==true){  // ciclo para continuar cargando problemas
         break;
     } // FInal problema 10
 
+    case 12:{
+
+
+        break;
+    } // Final problema 12
+
+
+    case 14:{
+    problema14();
+        break;
+    } // FInal probelma 14
+
+
+
     } // Final switch
 
 
