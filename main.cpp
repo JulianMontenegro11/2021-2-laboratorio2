@@ -124,6 +124,22 @@ while (continuar==true){  // ciclo para continuar cargando problemas
     } // FInal probelma 14
 
 
+    case 16:{
+        int n, caminos;
+        cout<<"En una malla de 2x2, realizando únicamente movimientos hacia la derecha y hacia abajo hay 6"<<endl;
+        cout<<"posibles caminos para llegar de la esquina superior izquierda a la inferior derecha"<<endl<<endl;
+        cout<<"Escriba un programa que reciba un numero n y calcule el número de caminos posibles en una cuadricula de nxn."<<endl<<endl;
+        cout<<"Por favor ingrese el un numero 'n' para la malla nxn: ";
+        cin>>n;
+        cout<<endl<<endl;
+        caminos=problema16(n);
+        cout<<"El numero de caminos posibles en una malla "<<n<<"x"<<n<<" es: "<<caminos;
+
+
+        break;
+    } // Final problema 16
+
+
 
     } // Final switch
 

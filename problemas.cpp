@@ -227,3 +227,19 @@ int problema13(int *matriz)
 
    return estrellas;
 }
+
+int problema16(int n)
+{
+int fila=n+1,columna=n+1, caminos,auxiliar=1;
+for(int f=1,c=1;f<fila && c<columna;){
+    if(f<fila){
+        f++;
+    }
+    if(c<columna){
+        c++;
+    }
+
+}
+
+}
+

@@ -14,5 +14,6 @@ void problema10(char *c1);
 bool problema12(int *matriz, int elementos);
 int problema13 (int *matriz);
 void problema14();
+int problema16(int n);
 
 #endif // PROBLEMAS_H
